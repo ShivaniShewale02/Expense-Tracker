@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Pro</title>
+  <link rel="stylesheet" href="E:\PROGRAMMING\Projects\Expence Tracker\Expence Manager\css\style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <h2><i class="fas fa-wallet"></i> ExpensePro</h2>
+    <span class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></span>
+    <ul id="navbar-menu">
+      <li><a href="greatePage/login.html">Login</a></li>
+      <li><a href="greatePage/profile.html">Profile</a></li>
+      <li><a href="greatePage/report.html">Report</a></li>
+      <li><a href="greatePage/contact-me.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <script>
+    function toggleMenu() {
+      document.getElementById("navbar-menu").classList.toggle("show");
+    }
+  </script>
+
+  <!-- Main content -->
+  <div class="container" style="position:relative; top:35px;">
+    <div class="dashboard">
+      <div class="card income-card">
+        <h3>Total Income</h3>
+        <p id="total-income">₹0.00</p>
+      </div>
+      <div class="card expense-card">
+        <h3>Total Expenses</h3>
+        <p id="total-expense">₹0.00</p>
+      </div>
+      <div class="card balance-card">
+        <h3>Balance</h3>
+        <p id="balance">₹0.00</p>
+      </div>
+    </div>
+
+    <!-- Add Transaction Form -->
+    <div class="transaction-form">
+      <h3><i class="fas fa-plus icon"></i>Add Transaction</h3>
+      <form id="transaction-form">
+        <div class="input-group">
+          <label for="description">Description:</label>
+          <input type="text" id="description" required>
+        </div>
+        <div class="input-group">
+          <label for="amount">Amount:</label>
+          <input type="number" id="amount" required>
+        </div>
+        <div class="input-group">
+          <label for="type">Type:</label>
+          <select id="type" required>
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="category">Category:</label>
+          <select id="category" required>
+            <option value="shopping">Shopping</option>
+            <option value="medical">Medical Expenses</option>
+            <option value="food">Food Expenses</option>
+            <option value="none">None</option>
+          </select>
+        </div>
+        <button type="submit"><i class="fas fa-plus icon"></i>Add Transaction</button>
+      </form>
+    </div>
+
+    <!-- Income & Expense Sections -->
+    <div class="income-expense-section">
+      <div class="income-section">
+        <h2>Income</h2>
+        <ul id="income-history" class="transaction-list"></ul>
+      </div>
+      <div class="expense-section">
+        <h2>Expenses</h2>
+        <ul id="expense-history" class="transaction-list"></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer style="position:relative; top:35px;">
+    <p>Connect with us:</p>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <p>&copy; 2024 Expense Pro</p>
+  </footer>
+
+  <script src="js\app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

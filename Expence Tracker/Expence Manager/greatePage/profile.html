@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="E:\PROGRAMMING\Projects\Expence Tracker\Expence Manager\css\profile.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h2>Expense Pro</h2>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="report.html">Report</a></li>
+      <li><a href="profile.html">Profile</a></li>
+    </ul>
+  </nav>
+
+  <!-- Profile Container -->
+  <div class="profile-container">
+    <h2>Profile Information</h2>
+    <div id="login-prompt" style="display:none;">Please <a href="login.html">log in</a> to view your profile.</div>
+    <div id="profile-info" style="display:none;">
+      <div class="profile-info">
+        <label>Email:</label>
+        <p id="user-email">user@example.com</p>
+      </div>
+      <div class="change-password">
+        <label>Change Password</label>
+        <input type="password" placeholder="New Password" id="new-password">
+        <button onclick="changePassword()">Save Password</button>
+      </div>
+      <div class="upload-photo">
+        <label>Upload Photo</label>
+        <input type="file" id="file-upload">
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Expense Pro | Connect with us on social media!</p>
+    <a href="#">Twitter</a> | <a href="#">Facebook</a>
+  </footer>
+
+  <script src="E:\PROGRAMMING\Projects\Expence Tracker\Expence Manager\js\profile.js"></script>
+</body>
+</html>
