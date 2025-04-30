@@ -1,6 +1,6 @@
 # 💰 Expense Tracker
 
-A simple and responsive **Expense Tracker** web application that helps users record and monitor their daily expenses. Built using **HTML**, **CSS**, and **JavaScript**, this project showcases DOM manipulation, event handling, and dynamic UI updates.
+ responsive **Expense Tracker** web application that helps users record and monitor their daily expenses. Built using **HTML**, **CSS**, and **JavaScript**, this project showcases DOM manipulation, event handling, and dynamic UI updates.
 
 ---
 
